@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <% for(var i=0, len=htmlWebpackPlugin.files.css.length; i<len; i++) {%>
+    <link href="<%= htmlWebpackPlugin.files.css[i] %>" rel="stylesheet" />
+    <% } %>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body language="en">
+    <div id="navCtn"></div>
+    <div id="mainCtn">
+        <div id="pageCtn"></div>
+        <div id="footerCtn"></div>
+    </div>
+    <div class="downloadMask" style="display: none;">
+        <div class="wrap">
+            <div class="btnWrap">
+                <a href="https://tretalk.com/download/Forward-Android.apk"><button class="btn">下载到本地</button></a>
+                <button class="btn"> <a href="market://details?id=com.meetings&target=market&from=met">Google
+                        Play下载</a></button>
+                <div class="btnClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" t="1596708824470"
+                        class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="2534" width="200" height="200">
+                        <defs>
+                            <style type="text/css" /></defs><path d="M512 984.5C251 984.5 39.5 773 39.5 512S251 39.5 512 39.5 984.5 251 984.5 512 773 984.5 512 984.5z m0-900c-235.5 0-427.5 192-427.5 427.5s192 427.5 427.5 427.5 427.5-192 427.5-427.5S747.5 84.5 512 84.5z" p-id="2535" fill="#0384FF"/><path d="M546.5 512l183-183c9-9 9-24 0-34.5L728 293c-9-9-24-9-33 0L512 477.5l-183-183c-9-9-24-9-33 0l-1.5 1.5c-9 9-9 24 0 34.5l183 181.5-183 183c-9 9-9 24 0 34.5l1.5 1.5c9 9 24 9 33 0l183-184.5 183 183c9 9 24 9 33 0l1.5-1.5c9-9 9-24 0-34.5L546.5 512z" p-id="2536" fill="#0384FF"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% for(var i=0, len=htmlWebpackPlugin.files.js.length; i<len; i++) {%>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+    <% } %>
+</body>
+
+</html>

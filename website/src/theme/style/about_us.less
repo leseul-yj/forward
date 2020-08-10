@@ -1,0 +1,148 @@
+// body,html,#pageCtn,#mainCtn {
+//   height: 100%;
+// }
+
+.about {
+  width: 100%;
+  height: auto;
+  background: #405bd3;
+  padding: 80px 0 90px 0;
+  background: url(../../images/common/about_bg.jpg);
+  background-size: cover;
+
+  .svgWrap {
+    margin: 20px auto;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    cursor: pointer;
+    
+    .txtItem {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      padding: 40px;
+    }
+
+    svg {
+      display: block;
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      top: 0;
+      left: 0;
+      transform: rotateZ(90deg);
+    }
+
+    .fillSvg {
+      display: none;
+      transform: rotateZ(0deg);
+      left: -1px;
+    }
+  }
+}
+
+.svgWrap:hover .fillSvg {
+  display: block;
+  z-index: 0;
+}
+
+.about-hero {
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 70px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'SFUIText' !important;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.about-options {
+  text-align: center;
+
+  img {
+    vertical-align: middle;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 7px;
+    margin-top: 50px;
+    font-family: 'SFUIText' !important;
+    font-weight: 400;
+  }
+
+  p {
+    min-height: 125px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    line-height: 25px;
+    padding: 10px;
+  }
+
+  .btn-default {
+    font-size: 17px;
+    border-radius: 100px;
+    line-height: 48px;
+    padding: 4px 35px;
+    background-color: #fff;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .btn-white {
+    background-color: #fff;
+    color: #405bd3;
+  }
+
+  .btn-white,
+  .btn-orange,
+  .btn-green {
+    width: 216px;
+    border-color: transparent;
+    border: 0;
+  }
+
+  .btn-orange {
+    background-color: #e0a418;
+  }
+
+  .btn-green {
+    background-color: #4bae29;
+  }
+
+  .btn-white:hover,
+  .btn-white:focus {
+    opacity: 0.85;
+    color: #405bd3;
+  }
+
+  .btn-green:hover,
+  .btn-green:focus {
+    background-color: rgb(60, 155, 27);
+    color: #fff;
+  }
+
+  .btn-orange:hover,
+  .btn-orange:focus {
+    background-color: #be8b16;
+    color: #fff;
+  }
+}

@@ -1,0 +1,216 @@
+<!-- <section class="home-page-header" data-module="summary">
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-7 ">
+                <img class="img-fluid" src="../images/home/phone-header.png" />
+            </div>
+            <div class="col-md-5 ">
+                <h1 i18n="HOME.SUMMARY.TITLE"></h1>
+                <span class="decoration"></span>
+                <p i18n="HOME.SUMMARY.SUBTITLE"></p>
+            </div>
+        </div>
+    </div>
+    <img class="illustration" src="../images/home/summary.jpg" />
+</section> -->
+<header class="home-page-header" data-rjs="3" data-module="summary">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 vert-center">
+                <div class="hero-section">
+                    <h1 i18n="HOME.SUMMARY.TITLE"></h1>
+                    <p i18n="HOME.SUMMARY.SUBTITLE"></p>
+                </div>
+
+                <div class="app-download">
+                    <div class="app-info clearfix mobile-visible">
+                    </div>
+                    <div class="download-btns">
+                        <a href="javascript:void(0);" class="btn btn-default apple-btn" id="iosDownload">
+                            <span class="android-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18">
+                                    <path fill="#FFF" fill-rule="nonzero"
+                                        d="M13.289 11.558c.497.676 1.068 1.113 1.711 1.31-.28.828-.722 1.69-1.329 2.587-.934 1.352-1.857 2.028-2.767 2.028-.34 0-.843-.111-1.51-.333-.62-.22-1.16-.332-1.62-.332-.462 0-.972.117-1.53.35-.583.221-1.062.332-1.438.332-1.092 0-2.166-.891-3.222-2.674C.528 13.066 0 11.336 0 9.636c0-1.574.4-2.861 1.201-3.863C2.027 4.77 3.046 4.27 4.26 4.27c.267 0 .564.032.892.096a4.05 4.05 0 0 1 1.02.358c.375.198.685.335.928.411.242.076.43.114.564.114.158 0 .4-.035.728-.105a3.44 3.44 0 0 0 .983-.385c.352-.186.655-.326.91-.42.255-.092.516-.139.783-.139.85 0 1.614.221 2.294.664.364.233.734.577 1.11 1.031-.558.466-.965.874-1.22 1.224-.473.652-.71 1.363-.71 2.132 0 .85.25 1.62.747 2.307zm-3.88-8.285c-.423.384-.81.635-1.16.752-.121.035-.275.067-.463.096-.187.03-.401.056-.643.079.012-1.027.29-1.913.834-2.66C8.52.793 9.415.28 10.66 0c.024.117.042.198.054.245v.193c0 .42-.102.892-.308 1.417-.217.513-.55.986-.997 1.418z" />
+                                </svg>
+                            </span>
+                            <span i18n="HOME.SUMMARY.IOS_DOWN">iOS Download</span>
+                        </a>
+                        <a href="javascript:void(0);" class="btn btn-default android-btn" id="androidDownload">
+                            <span class="android-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19"
+                                    viewBox="0 0 17 19">
+                                    <path fill="#fff" fill-rule="nonzero"
+                                        d="M3.613 5.871H13.93V13.6c0 .845-.463 1.291-1.335 1.292h-.636c0 .895.01 1.765-.004 2.635-.008.54-.487.987-1.036 1.006-.59.021-1.128-.376-1.149-.927-.033-.891-.009-1.784-.009-2.695H7.784v1.062c-.001.522.01 1.044-.01 1.565-.018.51-.43.928-.939.99-.539.066-1.043-.238-1.203-.734a1.161 1.161 0 0 1-.057-.344c-.005-.741-.004-1.483-.002-2.224 0-.102.018-.204.03-.334h-.76c-.744-.006-1.229-.476-1.23-1.203-.002-2.54 0-5.081 0-7.622v-.196zm10.323-.74H3.602c.097-1.74 1.111-2.82 2.62-3.588L5.769.876c-.109-.16-.22-.32-.328-.48-.076-.113-.199-.241-.029-.354.184-.122.259.049.34.165.193.278.384.558.576.838.236.345.236.345.641.23a6.373 6.373 0 0 1 3.846.08c.046.015.092.028.152.045l.787-1.147.094-.137c.074-.102.168-.158.285-.073.107.076.089.174.022.272-.228.33-.454.662-.68.994l-.158.234c1.5.76 2.524 1.843 2.619 3.587zm-2.402-1.956a.551.551 0 0 0-.548-.542.54.54 0 0 0-.553.532c-.002.3.235.535.543.537a.54.54 0 0 0 .558-.527zm-4.43-.013a.541.541 0 0 0-.555-.53.553.553 0 0 0-.545.545.543.543 0 0 0 .561.525.53.53 0 0 0 .54-.54zm9.772 6.077c0 .748.002 1.496-.001 2.243-.002.658-.467 1.133-1.102 1.133-.634 0-1.103-.479-1.104-1.133-.001-1.516-.003-3.031.001-4.547a1.069 1.069 0 0 1 .976-1.062c.577-.059 1.083.29 1.205.837.024.106.023.218.024.328v2.201zm-14.01 0c0 .782.007 1.564-.003 2.346-.007.48-.354.883-.825 1-.462.115-.968-.071-1.204-.48a1.197 1.197 0 0 1-.168-.561 362.83 362.83 0 0 1-.005-4.61c.002-.605.493-1.07 1.104-1.07.614 0 1.093.458 1.1 1.07.009.769.002 1.537.002 2.305h-.002z" />
+                                </svg>
+                            </span> 
+                                
+                                <span i18n="HOME.SUMMARY.ANDROID_DOWN">Android Download</span>
+                        </a>
+                        <!-- <a href="javascript:void(0);" class="btn btn-default PC-btn PC-btn-blue" id="PCDownload">
+                            <span class="android-icon">
+                                <svg t="1591346527563" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2616" width="18" height="18">
+
+                                    <path d="M753.152 277.504H271.36c-24.064 0-44.032 20.992-44.032 47.104v234.496c0 26.112 19.456 47.104 44.032 47.104h481.28c24.064 0 44.032-20.992 44.032-47.104l0.512-234.496c0-26.112-19.968-47.104-44.032-47.104z" p-id="2617" fill="#ffffff"></path>
+                                    <path d="M512 0C229.376 0 0 229.376 0 512s229.376 512 512 512 512-229.376 512-512S794.624 0 512 0z m328.704 605.696c0 26.112-19.456 47.104-44.032 47.104h-262.656l87.552 140.8H402.432l87.552-140.8H227.328c-24.064 0-44.032-20.992-44.032-47.104V277.504c0-26.112 19.456-47.104 44.032-47.104h569.344c24.064 0 44.032 20.992 44.032 47.104v328.192z" p-id="2618" fill="#ffffff"></path>
+                                </svg></span> <span>PC/Windows Download</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="../images/home/headerphone.png" class="header-phone">
+            </div>
+        </div>
+    </div>
+    <!-- <img class="illustration" src="../images/home/summary.jpg" /> -->
+</header>
+<section class="features">
+    <div class="container">
+        <h2 class="section-title" i18n="HOME.FEATURE.TITLE"></h2>
+        <p class="section-subtitle" i18n="HOME.FEATURE.SUBTITLE"></p>
+        <div class="row">
+            <div class="feature-item">
+                <figure>
+                    <img src="../images/home/d1.png">
+                </figure>
+                <div>
+                    <h3 i18n="HOME.FEATURE.TITLE_ONE"></h3>
+                    <p i18n="HOME.FEATURE.SUBTITLE_ONE"></p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <figure>
+                    <img src="../images/home/d2.png">
+                </figure>
+                <div>
+                    <h3 i18n="HOME.FEATURE.TITLE_TWO"></h3>
+                    <p i18n="HOME.FEATURE.SUBTITLE_TWO"></p>
+                </div>
+
+            </div>
+
+            <div class="feature-item">
+                <figure>
+                    <img src="../images/home/d3.png">
+                </figure>
+
+                <div>
+                    <h3 i18n="HOME.FEATURE.TITLE_TREE"></h3>
+
+                    <p i18n="HOME.FEATURE.SUBTITLE_TREE"></p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <figure>
+                    <img src="../images/home/d4.png">
+                </figure>
+
+                <div>
+                    <h3 i18n="HOME.FEATURE.TITLE_FOUR"></h3>
+                    <p i18n="HOME.FEATURE.SUBTITLE_FOUR"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="showcase">
+    <div class="showcase-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/home/phone-1.png" class="phone-1">
+                </div>
+
+                <div class="col-md-6 vert-center">
+                    <h2 i18n="HOME.SECTION_ONE.TITLE"></h2>
+                    <p i18n="HOME.SECTION_ONE.SUBTITLE"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase-item">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 vert-center vert-center-right">
+                    <h2 i18n="HOME.SECTION_TWO.TITLE"></h2>
+                    <p i18n="HOME.SECTION_TWO.SUBTITLE"></p>
+                </div>
+                <div class="col-md-6 desktop-visible">
+                    <img src="../images/home/phone-3.png" class="phone-2">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/home/phone-4.png" class="phone-3">
+                </div>
+                <div class="col-md-6 vert-center">
+                    <h2 i18n="HOME.SECTION_THREE.TITLE"></h2>
+                    <p i18n="HOME.SECTION_THREE.SUBTITLE"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer-promo">
+    <div class="container">
+        <h2 class="section-title" i18n="HOME.SECURITY.TITLE"></h2>
+        <p class="section-subtitle" i18n="HOME.SECURITY.SUBTITLE"></p>
+        <div class="footer-download-btns">
+            <a href="#" class="btn btn-default 0 apple-btn">
+                <span class="android-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18"
+                        viewBox="0 0 15 18">
+                        <path fill="#FFF" fill-rule="nonzero"
+                            d="M13.289 11.558c.497.676 1.068 1.113 1.711 1.31-.28.828-.722 1.69-1.329 2.587-.934 1.352-1.857 2.028-2.767 2.028-.34 0-.843-.111-1.51-.333-.62-.22-1.16-.332-1.62-.332-.462 0-.972.117-1.53.35-.583.221-1.062.332-1.438.332-1.092 0-2.166-.891-3.222-2.674C.528 13.066 0 11.336 0 9.636c0-1.574.4-2.861 1.201-3.863C2.027 4.77 3.046 4.27 4.26 4.27c.267 0 .564.032.892.096a4.05 4.05 0 0 1 1.02.358c.375.198.685.335.928.411.242.076.43.114.564.114.158 0 .4-.035.728-.105a3.44 3.44 0 0 0 .983-.385c.352-.186.655-.326.91-.42.255-.092.516-.139.783-.139.85 0 1.614.221 2.294.664.364.233.734.577 1.11 1.031-.558.466-.965.874-1.22 1.224-.473.652-.71 1.363-.71 2.132 0 .85.25 1.62.747 2.307zm-3.88-8.285c-.423.384-.81.635-1.16.752-.121.035-.275.067-.463.096-.187.03-.401.056-.643.079.012-1.027.29-1.913.834-2.66C8.52.793 9.415.28 10.66 0c.024.117.042.198.054.245v.193c0 .42-.102.892-.308 1.417-.217.513-.55.986-.997 1.418z" />
+                    </svg>
+                    
+                </span>
+                <span>iOS Download</span>
+            </a>
+            <a href="#" class="btn btn-default android-btn" style="background-color: #fff;">
+                <span class="android-icon" style="padding: 18px;">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19"
+                        viewBox="0 0 17 19">
+                        <path fill="#FFF" fill-rule="nonzero"
+                            d="M3.613 5.871H13.93V13.6c0 .845-.463 1.291-1.335 1.292h-.636c0 .895.01 1.765-.004 2.635-.008.54-.487.987-1.036 1.006-.59.021-1.128-.376-1.149-.927-.033-.891-.009-1.784-.009-2.695H7.784v1.062c-.001.522.01 1.044-.01 1.565-.018.51-.43.928-.939.99-.539.066-1.043-.238-1.203-.734a1.161 1.161 0 0 1-.057-.344c-.005-.741-.004-1.483-.002-2.224 0-.102.018-.204.03-.334h-.76c-.744-.006-1.229-.476-1.23-1.203-.002-2.54 0-5.081 0-7.622v-.196zm10.323-.74H3.602c.097-1.74 1.111-2.82 2.62-3.588L5.769.876c-.109-.16-.22-.32-.328-.48-.076-.113-.199-.241-.029-.354.184-.122.259.049.34.165.193.278.384.558.576.838.236.345.236.345.641.23a6.373 6.373 0 0 1 3.846.08c.046.015.092.028.152.045l.787-1.147.094-.137c.074-.102.168-.158.285-.073.107.076.089.174.022.272-.228.33-.454.662-.68.994l-.158.234c1.5.76 2.524 1.843 2.619 3.587zm-2.402-1.956a.551.551 0 0 0-.548-.542.54.54 0 0 0-.553.532c-.002.3.235.535.543.537a.54.54 0 0 0 .558-.527zm-4.43-.013a.541.541 0 0 0-.555-.53.553.553 0 0 0-.545.545.543.543 0 0 0 .561.525.53.53 0 0 0 .54-.54zm9.772 6.077c0 .748.002 1.496-.001 2.243-.002.658-.467 1.133-1.102 1.133-.634 0-1.103-.479-1.104-1.133-.001-1.516-.003-3.031.001-4.547a1.069 1.069 0 0 1 .976-1.062c.577-.059 1.083.29 1.205.837.024.106.023.218.024.328v2.201zm-14.01 0c0 .782.007 1.564-.003 2.346-.007.48-.354.883-.825 1-.462.115-.968-.071-1.204-.48a1.197 1.197 0 0 1-.168-.561 362.83 362.83 0 0 1-.005-4.61c.002-.605.493-1.07 1.104-1.07.614 0 1.093.458 1.1 1.07.009.769.002 1.537.002 2.305h-.002z" />
+                    </svg> -->
+                    <img src="../images/home/andriod-icon.png" alt="">
+                </span> <span style="color: #404146;">Android Download</span>
+            </a>
+        </div>
+    </div>
+    <img class="illustration" src="../images/home/footer-promo-bg.jpg" />
+</section>
+<section>
+    <div class="tips"></div>
+</section>
+
+<div class="downloadMask">
+    <div class="wrap">
+        <div class="btnWrap">
+            <a href="https://tretalk.com/download/Forward-Android.apk"><button class="btn">下载到本地</button></a>
+            <button class="btn"> <a href="market://details?id=com.meetings&target=market&from=met">Google
+                    Play下载</a></button>
+            <div class="btnClose">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" t="1596708824470"
+                    class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="2534" width="200" height="200">
+                    <defs>
+                        <style type="text/css" /></defs><path d="M512 984.5C251 984.5 39.5 773 39.5 512S251 39.5 512 39.5 984.5 251 984.5 512 773 984.5 512 984.5z m0-900c-235.5 0-427.5 192-427.5 427.5s192 427.5 427.5 427.5 427.5-192 427.5-427.5S747.5 84.5 512 84.5z" p-id="2535" fill="#0384FF"/><path d="M546.5 512l183-183c9-9 9-24 0-34.5L728 293c-9-9-24-9-33 0L512 477.5l-183-183c-9-9-24-9-33 0l-1.5 1.5c-9 9-9 24 0 34.5l183 181.5-183 183c-9 9-9 24 0 34.5l1.5 1.5c9 9 24 9 33 0l183-184.5 183 183c9 9 24 9 33 0l1.5-1.5c9-9 9-24 0-34.5L546.5 512z" p-id="2536" fill="#0384FF"/></svg>
+            </div>
+        </div>
+    </div>
+</div>

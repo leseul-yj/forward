@@ -1,0 +1,670 @@
+@root: 16rem;
+
+#pageCtn[data-page="home"] {
+
+    .home-page-header {
+        position: relative;
+        color: white;
+        overflow: hidden;
+        background: url(../../images/home/header.jpg);
+        background-size: cover;
+
+        .vert-center {
+            // transform: translateY(80%);
+        }
+
+        h1 {
+            font-family: "HindGuntur-SemiBold";
+        }
+
+        .container {
+            max-width: 1425px;
+            margin: auto;
+
+            .app-download {
+                margin-top: 70px;
+            }
+
+            .row {
+                // display: block;
+            }
+
+            h1 {
+                font-size: 55px;
+                line-height: 1.27;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.4;
+                letter-spacing: 0.2px;
+                color: #fff;
+                margin-top: 10px;
+            }
+
+            // h1 {
+            //     font-size: 80 / @root;
+            //     max-width: 960 / @root;
+            // }
+
+            // p {
+            //     margin-top: 45 / @root;
+            //     font-size: 18 / @root;
+            //     max-width: 960 / @root;
+            // }
+
+            .decoration {
+                display: inline-block;
+                height: 6 / @root;
+                width: 50 / @root;
+                background-image: linear-gradient(to left, #ff8904, #ff3840);
+            }
+        }
+
+    }
+
+    .illustration {
+        object-fit: cover;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    /* Features */
+
+    .features {
+        background-color: #f9f9f9;
+        padding-top: 61px;
+        padding-bottom: 45px;
+        text-align: center;
+
+        .section-title {
+            font-family: 'SFNSDisplay' !important;
+            font-size: 32px;
+            line-height: 2.19;
+            color: #313236;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            color: #858585;
+            font-size: 22px;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 36px;
+        }
+
+        .feature-item h3 {
+            color: #313236;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-family: 'SFUIText';
+        }
+
+        .feature-item p {
+            color: #858585;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .feature-item:first-child figure {
+            background: #1ab8e2;
+        }
+
+        .feature-item:nth-child(2) figure {
+            background: #4ca2e9;
+        }
+
+        .feature-item:nth-child(3) figure {
+            background: #2ac9cc;
+        }
+
+        .feature-item:last-child figure {
+            background: #3bcb9d;
+        }
+
+        .feature-item figure {
+            padding: 30px;
+            height: 170px;
+            line-height: 60px;
+            margin-bottom: 15px;
+
+        }
+
+        .feature-item:last-child img {
+            margin-top: 5px;
+        }
+
+        .feature-item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0px 2px 15px 0px rgba(161, 161, 161, 0.2);
+            background-color: #fff;
+            min-height: 300px;
+        }
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1260px !important;
+    }
+
+    .home-page-header .vert-center {}
+
+    .phone-1 {
+        margin-left: 85px;
+        width: 70% !important;
+        height: auto !important;
+    }
+
+    .phone-2 {
+        width: 70% !important;
+        height: auto !important;
+        margin: auto;
+    }
+
+    .phone-3 {
+        margin-top: 40px;
+        width: 70% !important;
+        height: auto !important;
+    }
+
+    .home-page-header {
+        max-height: 815px !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-phone {
+        margin-left: 25%;
+        width: 75%;
+        height: auto;
+        margin-top: 120px;
+    }
+
+    .download-btns {
+        display: flex;
+    }
+
+    .home-page-header .vert-center {}
+
+
+
+    .showcase .row {
+        position: relative;
+    }
+
+    .vert-center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vert-center-right {
+        right: 0;
+        left: auto;
+    }
+
+    .showcase-item p {
+        max-width: 547px;
+    }
+
+    .showcase-item:last-child p {
+        max-width: 550px;
+    }
+
+    .showcase-item:nth-child(odd) .col-md-6:last-child {
+        float: right;
+    }
+
+    .vert-center-right {
+        padding-left: 8%;
+    }
+}
+
+/* Showcase section */
+
+.showcase-item {
+    padding: 74px 0;
+    background-color: #fff;
+}
+
+.showcase-item:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.showcase-item h2 {
+    width: 100%;
+    font-size: 40px;
+    color: #313236;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: 'SFUIText';
+}
+
+.showcase-item h2:after {
+    display: block;
+    content: '';
+    width: 70px;
+    height: 10px;
+    background-color: #405bd3;
+    margin-top: 20px;
+}
+
+.showcase-item p {
+    font-size: 18px;
+    color: #858585;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.footer-promo {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    .footer-download-btns {
+        // height: 180px;
+
+        .btn {
+            height: 180px;
+            width: 180px;
+            padding: 0;
+            border-radius: 20px;
+
+            .android-icon {
+                display: block;
+                padding: 20px;
+                padding-top: 35px;
+                height: 120px;
+                width: 180px;
+
+                svg {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.section-subtitle {
+    color: #858585;
+    font-size: 22px;
+    margin-bottom: 100px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.footer-promo p.section-subtitle {
+    margin-bottom: 55px;
+    color: #fff;
+    line-height: 26px;
+}
+
+.footer-promo h2.section-title {
+    color: #fff;
+}
+
+
+
+.download-btns a {
+    display: block;
+    margin: 25px;
+}
+
+.btn-default {
+    margin: 10px;
+    margin: 10px;
+    line-height: 48px;
+    padding: 4px 20px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    font-size: 17px;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-width: 220px;
+    // white-space: nowrap;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #0384FF;
+    border-color: #0384FF;
+}
+
+.apple-btn-green {
+    background-color: #48bf20;
+    border-color: #48bf20;
+}
+
+.apple-btn {
+    margin-right: 15px;
+}
+
+.footer-promo .apple-btn:hover,
+.footer-promo .apple-btn:focus,
+.footer-promo .android-btn:hover,
+.footer-promo .android-btn:focus {
+    background-color: #48bf20;
+    border-color: #48bf20;
+    color: #fff;
+}
+
+.apple-btn-green:hover,
+.apple-btn-green:focus,
+.apple-btn-green:active {
+    background-color: rgb(60, 155, 27);
+    border-color: rgb(60, 155, 27);
+    color: #fff;
+}
+
+.android-btn-white:hover,
+.android-btn-white:focus,
+.android-btn-white:active {
+    opacity: 0.85;
+    color: #000;
+    border-color: transparent;
+}
+
+.android-icon {
+    width: 17px;
+    height: 19px;
+    float: left;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 11px;
+}
+
+.android-btn-white {
+    color: #000;
+    background-color: #fff;
+    padding: 4px 30px;
+}
+
+.android-btn-white:hover,
+.android-btn-white:focus,
+.android-btn-white:active {
+    opacity: 0.85;
+    color: #000;
+    border-color: transparent;
+}
+
+.PC-btn-blue:hover,
+.PC-btn-blue:focus,
+.PC-btn-blue:active {
+    opacity: 0.85;
+    color: #fff;
+    border-color: transparent;
+}
+
+
+.PC-btn-blue {
+    color: #fff;
+    background-color: deepskyblue;
+    border: none;
+    padding: 4px 22px;
+}
+
+.PC-btn-blue:hover,
+.PC-btn-blue:focus,
+.PC-btn-blue:active {
+    opacity: 0.85;
+    color: #fff;
+    border-color: transparent;
+}
+
+@media (max-width: 1024px) {
+    .home-page-header .container h1 {
+        font-size: 36px!important;
+    }
+    .logoTitle {
+        display: none;
+    }
+
+    // .home-page-header {
+    //     padding-bottom: 30px;
+    // }
+
+    .feature-item {
+        width: calc(50% - 20px) !important;
+    }
+
+    .download-btns a {
+        margin: 25px auto;
+    }
+
+    .home-page-header .vert-center {
+        margin-top: 80px;
+    }
+
+    .home-page-header p {
+        font-size: 20px;
+    }
+
+    .header-phone {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        width: 60%;
+        height: auto;
+    }
+
+    .hero-section,
+    .app-download {
+        text-align: center;
+    }
+
+    .app-download {
+        margin-top: 30px !important;
+        margin-bottom: 30px;
+    }
+
+    .app-info>div {
+        max-width: none !important;
+        margin-right: 0 !important;
+    }
+
+    .phone-1,
+    .phone-2,
+    .phone3 {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mobile-visible {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .phone-1,
+    .phone-3 {
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .showcase-item {
+        padding-bottom: 30px;
+    }
+
+    .navbar-toggle {
+        border: 0;
+        margin-top: 17px;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .sticky .navbar-toggle .icon-bar {
+        background-color: #313236;
+    }
+
+    .navbar-toggle .icon-bar+.icon-bar {
+        margin-top: 6px;
+    }
+
+    .navbar-toggle .icon-bar {
+        width: 24px;
+    }
+
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .job-desc {
+        max-width: 78%;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-item {
+        width: 100% !important;
+    }
+
+    .navDefault .divLanguage {
+        right: -50%;
+    }
+
+    .showcase-item {
+        padding: 0;
+    }
+
+    .showcase-item .col-md-6 {
+        float: left;
+        margin: 25px 10px
+    }
+
+    .home-page-header .col-md-6:last-child {
+        display: none;
+    }
+
+    .hero-section h1 {
+        font-size: 36px !important;
+    }
+
+    .app-download {
+        margin: 100px 0;
+    }
+
+    .home-page-header .vert-center {
+        margin-top: 120px;
+    }
+
+    .navDefault .logo,
+    .navDefault .logo1 {
+        margin-top: 15px !important;
+    }
+
+    [language="zh"] .hero-section h1 {
+        margin: 50px auto;
+
+    }
+}
+
+.tips {
+    width: 200px;
+    height: auto;
+    padding: 18px 20px;
+    line-height: 20px;
+    background: #fff;
+    color: #303133;
+    font-size: 14px;
+    text-align: justify;
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -100px;
+    display: none;
+}
+
+.downloadMask {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+    z-index: 99;
+    display: none;
+
+    .wrap {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+
+        .btnWrap {
+            position: absolute;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -250px;
+            height: 350px;
+            width: 300px;
+            padding-top: 80px;
+            border-radius: 10px;
+
+
+            a:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .btn {
+                display: block;
+                margin: 15px auto;
+                width: 200px;
+                color: #007bff;
+                border-color: #0384FF;
+            }
+
+            .btnClose {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 60px;
+                left: calc(50% - 20px);
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+    }
+}
