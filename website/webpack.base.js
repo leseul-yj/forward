@@ -5,15 +5,15 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const chunks = {
-    index: [path.join(__dirname, "./src/index.js")]
+    index: [path.join(__dirname,"./src/index.js")]
 };
 
 exports.default = {
     entry: chunks,
     output: {
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname,"./dist"),
         filename: "[name].[chunkhash].js",
         publicPath: "./"
     },
@@ -27,7 +27,7 @@ exports.default = {
             {
                 test: /\.css$/,
                 use: [
-                    { loader: "style-loader" },
+                    {loader: "style-loader"},
                     {
                         loader: "css-loader",
                         options: {
@@ -38,12 +38,12 @@ exports.default = {
             },
             {
                 test: /\.less$/,
-                include: [path.resolve(__dirname, "node_modules"), path.resolve(__dirname, "src/theme")],
-                use: ["style-loader", "css-loader", "less-loader"]
+                include: [path.resolve(__dirname,"node_modules"),path.resolve(__dirname,"src/theme")],
+                use: ["style-loader","css-loader","less-loader"]
             },
             {
                 test: /\.less$/,
-                exclude: [path.resolve(__dirname, "node_modules"), path.resolve(__dirname, "src/theme")],
+                exclude: [path.resolve(__dirname,"node_modules"),path.resolve(__dirname,"src/theme")],
                 use: [
                     {
                         loader: "style-loader" // creates style nodes from JS strings
@@ -112,8 +112,8 @@ exports.default = {
         ]
     },
     resolve: {
-        extensions: [".js", ".jsx", ".json", ".css", ".less"],
-        modules: [__dirname, "node_modules", path.resolve(__dirname, "./src/js"), path.resolve(__dirname, "./src/theme")]
+        extensions: [".js",".jsx",".json",".css",".less"],
+        modules: [__dirname,"node_modules",path.resolve(__dirname,"./src/js"),path.resolve(__dirname,"./src/theme")]
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -126,6 +126,15 @@ exports.default = {
             alwaysWriteToDisk: true,
             chunks: ["index"],
             chunksSortMode: "manual",
+            inject: false
+        }),
+        new HtmlWebpackPlugin({
+            favicon: "./src/images/common/favicon.ico",
+            hash: true,
+            title: "Forward",
+            filename: "./userRegister.html",
+            template: "./template/userRegister.html",
+            alwaysWriteToDisk: true,
             inject: false
         }),
         new webpack.ProvidePlugin({
