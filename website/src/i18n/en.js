@@ -15,7 +15,9 @@ export default {
             TITLE: "Without Distractions - Talk As You Want",
             SUBTITLE: "Pay More Attention to Privacy * and Security*. Let’s start a free talk to say what you wanna say!",
             ANDROID_DOWN: "Android Download",
-            IOS_DOWN: "IOS Download"
+            IOS_DOWN: "IOS Download",
+            GOOGLE_DOWN: "Google Play Download",
+            BROWER_DOWN: "Download to Browser"
         },
         FEATURE: {
             TITLE: "End-to-end encryption makes a safer chat software",

@@ -15,7 +15,9 @@
             TITLE: "心无旁骛 — 聊您想聊",
             SUBTITLE: "更隐私*更安全* 随心所欲，畅所欲言的交谈!",
             ANDROID_DOWN: "安卓下载",
-            IOS_DOWN: "ios下载"
+            IOS_DOWN: "ios下载",
+            GOOGLE_DOWN: "谷歌商店下载",
+            BROWER_DOWN: "下载到本地"
         },
         FEATURE: {
             TITLE: "端对端加密更安全的聊天软件",
